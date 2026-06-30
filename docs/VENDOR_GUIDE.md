@@ -48,7 +48,8 @@ https://github.com/AGIFT-co/adserver-iOS-SDK-dist.git
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AGIFT-co/adserver-iOS-SDK-dist.git", from: "1.0.0")
+    // 現在はプレリリース版のため exact で固定します（`from:` はプレリリースを解決しません）。
+    .package(url: "https://github.com/AGIFT-co/adserver-iOS-SDK-dist.git", exact: "0.0.2-rc.1")
 ],
 targets: [
     .target(
@@ -216,9 +217,9 @@ PPID を利用する場合、以下はアプリ側で対応が必要です。
 | 安全な送信・保存 | HTTPS による通信の暗号化。未送信ログの永続化ファイルはファイル保護を明示し、バックアップ対象から除外 |
 | 利用目的の限定 | 受け取った PPID を広告配信・ログ記録以外の目的で使用しない |
 
-### サーバー側（当社）の二重防御
+### 同意がない間は PPID を送信しません（SDK 側ゲート）
 
-SDK の送信ゲートに加え、サーバー側でも同意のないレコードの PPID を受信時に破棄します（SDK 側の抑止だけに依存しません）。
+同意がない間は **SDK が PPID をリクエストに含めません**（送信そのものを止めます）。したがって、同意のない PPID はそもそもサーバーへ送信されません。送信可否の判定は SDK 内の単一ゲートに集約されています。
 
 ---
 
