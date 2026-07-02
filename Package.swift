@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AdServerSDK",
-            url: "https://github.com/AGIFT-co/adserver-iOS-SDK-dist/releases/download/v0.0.2-rc.4/AdServerSDK.xcframework.zip",
-            checksum: "2fcc6adb67bc3c86a1b9871413df6a0315a05d4d5a8a3ab566e6f496a5c0df11"
+            url: "https://github.com/AGIFT-co/adserver-iOS-SDK-dist/releases/download/v0.0.2/AdServerSDK.xcframework.zip",
+            checksum: "6e9fa6a4dc5e813e6bb8304c7e9f716918900bfbb0b8e25926a5c85849d0f9ab"
         )
     ]
 )
