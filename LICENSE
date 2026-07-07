@@ -20,7 +20,9 @@ Copyright (c) 2026 株式会社agift. All rights reserved.
 
 【第三者コンポーネント】
 
-本SDKは以下の Google LLC 製ライブラリに依存しています。これらはバイナリ形式で Google より提供されるプロプライエタリ製品であり、それぞれ固有の利用規約が適用されます。利用者はこれらの規約に個別に同意する必要があります。
+本配布物（AdServerSDK・コア XCFramework）は、第三者ライブラリに依存しません。
+
+AdMob メディエーション連携用のアダプタ（AdServerSDKAdMob）は、現在本配布物に含まれていません。当社がアダプタを提供する場合、アダプタは以下の Google LLC 製ライブラリに依存します。これらはバイナリ形式で Google より提供されるプロプライエタリ製品であり、それぞれ固有の利用規約が適用されます。利用者はこれらの規約に個別に同意する必要があります。
 
   - Google Mobile Ads SDK
     利用規約: https://developers.google.com/ad-manager/mobile-ads-sdk/ios/terms
@@ -28,7 +30,7 @@ Copyright (c) 2026 株式会社agift. All rights reserved.
   - Google User Messaging Platform SDK（Google Mobile Ads SDK の間接依存）
     利用規約: https://developers.google.com/ad-manager/mobile-ads-sdk/ios/terms
 
-本SDKを組み込むアプリの開発者（パブリッシャー）は、自身の Google AdMob アカウントを保有し、Google と直接契約していることが必要です。当社を介した間接的な契約関係では、Google の利用規約上 AdMob を使用することができません。
+AdMob メディエーション経由で本SDKを利用するアプリ開発者（パブリッシャー）は、自身の Google AdMob アカウントを保有し、Google と直接契約していることが必要です。当社を介した間接的な契約関係では、Google の利用規約上 AdMob を使用することができません。
 
 ---
 
