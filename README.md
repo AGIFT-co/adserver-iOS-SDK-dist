@@ -78,4 +78,4 @@ banner.load()
 
 ## ライセンス
 
-Copyright © 2026 株式会社agift. All rights reserved. 詳細は [LICENSE](LICENSE) を参照してください。
+Copyright © 2026 株式会社AGIFT. All rights reserved. 詳細は [LICENSE](LICENSE) を参照してください。
