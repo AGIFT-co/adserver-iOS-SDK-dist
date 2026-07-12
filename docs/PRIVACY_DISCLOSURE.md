@@ -49,7 +49,7 @@ SDK は広告の表示(view)・タップ(click)イベント(eventType・adUnitId
 
 > 広告画像の取得・計測ログ送信時に IP アドレス等の通信上の情報がサーバーに到達しますが、これは機能提供に必要な範囲の通信です。
 
-> **補足(送信項目の網羅開示)**: SDK は広告取得リクエスト(/delivery)で `sdkVersion`(SDK の版数)と `appId`(アプリのバンドル ID)を送信します。いずれも個人データではありませんが、送信項目の網羅性のため開示します。
+> **補足(送信項目の網羅開示)**: SDK は広告取得リクエスト(/delivery)で `sdkVersion`(SDK の版数)と `appId`(アプリのバンドル ID・取得できる場合のみ)を送信します。いずれも個人データではありませんが、送信項目の網羅性のため開示します。
 
 ---
 
@@ -68,4 +68,5 @@ SDK は広告の表示(view)・タップ(click)イベント(eventType・adUnitId
 
 - 同意の実装手順: [VENDOR_GUIDE.md](VENDOR_GUIDE.md)
 - Privacy Manifest(`PrivacyInfo.xcprivacy`)は **SDK に同梱済み**です。トラッキング非該当の判断に伴い、Manifest の `NSPrivacyTracking` は **false**、トラッキングドメインの申告はありません。なお Privacy Manifest を同梱していても、**App Store Connect の申告自体は引き続きアプリベンダーの責務**です。
+- **同梱 Manifest と本資料の反映時差**: §2-1(広告データ)の Manifest への反映は **v0.0.4 以降のバイナリ**からです。v0.0.2 / v0.0.3 に同梱の Manifest は旧申告(User ID のみ・用途 App Functionality)のままですが、**App Store Connect の申告は本資料の指針に従って記入してください**(本資料の方が実態を広く開示しており、安全側です)。
 - 本資料は SDK の実装(送信ゲート・送信項目)と整合するよう保守されます。SDK 更新時は最新版を参照してください。
